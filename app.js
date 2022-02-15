@@ -103,7 +103,9 @@ app.use('/', require('./routes/mood.routes'));
 
 
 //--------------APP LISTENER------------
+const port = process.env.PORT || 3000
 
-app.listen(3000, () => {
+
+app.listen(port, () => {
   console.log(`server is running`)
 })
